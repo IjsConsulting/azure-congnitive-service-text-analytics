@@ -7,8 +7,8 @@ namespace AzureCongSvcTextAnalyticsDemoConsoleApp
 {
     class Program
     {
-        private static readonly AzureKeyCredential credentials = new AzureKeyCredential("52e37d7db6b945b18c664ee534afed5a");
-        private static readonly Uri endpoint = new Uri("https://ta-07022021-demo.cognitiveservices.azure.com/");
+        private static readonly AzureKeyCredential credentials = new AzureKeyCredential("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+        private static readonly Uri endpoint = new Uri("https://xxxxxxxxxxxxxxxx.cognitiveservices.azure.com/");
 
         static async Task Main()
         {
@@ -32,8 +32,7 @@ namespace AzureCongSvcTextAnalyticsDemoConsoleApp
         {
             //const string inputText = "I had the best day of my life. I wish you were there with me.";
             const string inputText = "I hate you.";
-
-
+            
             DocumentSentiment documentSentiment = client.AnalyzeSentiment(inputText);
             Console.WriteLine($"Document sentiment: {documentSentiment.Sentiment}\n");
 
